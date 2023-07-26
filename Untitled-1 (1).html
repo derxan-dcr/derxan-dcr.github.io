@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>𝓜𝓔𝓙𝓞𝓡 𝓑𝓨𝓟𝓐𝓢𝓢</title>
+  <style>
+    body {
+      background-image: url("https://cdn.discordapp.com/attachments/1109537522280845412/1133593564018909324/standard_3_1.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .login-box {
+      width: 380px;
+      background-color: rgba(0, 0, 0, 0.116);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(31, 46, 21, 0.342);
+    }
+     .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #ffffff; 
+    }
+    
+    .login-box input[type="submit"] {
+      width: 100%;
+      background-color: #00000067;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .login-box img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: 410px;
+      height: auto;
+    }
+  </style>
+  <script>
+    function validarFormulario() {
+      var username = document.forms["loginForm"]["username"].value;
+      var password = document.forms["loginForm"]["password"].value;
+      
+      if (username === "bypass" && password === "alex1") {
+       
+        window.location.href = "alex1.html";
+        return false; 
+      } else {
+        
+        alert("DATOS INCORRECTO SI NO LO PONES BIEN TE BANEO XD");
+        return false; 
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="https://media.discordapp.net/attachments/1104567594368892938/1129832719367557290/1_0120.png?width=1216&height=684" alt="https://media.discordapp.net/attachments/1104567594368892938/1129832718927147048/1_0098.png?width=1216&height=684">
+      <form name="loginForm" onsubmit="return validarFormulario()" action="#" method="post">
+        <input type="text" name="username" placeholder="𝐔𝐒𝐔𝐀𝐑𝐈𝐎">
+        <input type="password" name="password" placeholder="𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃">
+        <input type="submit" value="Entrar">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
